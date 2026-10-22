@@ -1,0 +1,29 @@
+# Alternative single-client mode (no xinetd, no concurrency multiplex).
+# Use ONLY instead of xinetd when one test at a time is acceptable:
+#   sudo cp iperf3.service.example /etc/systemd/system/iperf3.service
+# Upstream contrib/iperf3.service, kept with its hardening.
+[Unit]
+Description=iperf3 server (single-client, no xinetd)
+After=network.target
+
+[Service]
+ExecStart=/usr/bin/iperf3 -s
+Restart=on-failure
+DynamicUser=yes
+NoNewPrivileges=yes
+PrivateTmp=yes
+PrivateDevices=yes
+ProtectSystem=strict
+ProtectHome=read-only
+ProtectControlGroups=yes
+ProtectKernelModules=yes
+ProtectKernelTunables=yes
+RestrictAddressFamilies=AF_UNIX AF_INET AF_INET6 AF_NETLINK
+RestrictNamespaces=yes
+RestrictRealtime=yes
+RestrictSUIDSGID=yes
+MemoryDenyWriteExecute=yes
+LockPersonality=yes
+
+[Install]
+WantedBy=multi-user.target

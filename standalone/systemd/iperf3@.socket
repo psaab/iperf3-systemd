@@ -1,0 +1,10 @@
+[Unit]
+Description=iperf3 socket for port %i
+PartOf=iperf3@%i.service
+
+[Socket]
+ListenStream=%i
+Accept=no
+
+[Install]
+WantedBy=sockets.target

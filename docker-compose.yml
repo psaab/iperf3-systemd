@@ -1,0 +1,19 @@
+services:
+  iperf3:
+    build: .
+    container_name: iperf3
+    restart: unless-stopped
+    environment:
+      # Single port or range, e.g. 5201 or 5200-5212 (see .env.example).
+      IPERF3_PORTS: "${IPERF3_PORTS:-5200-5212}"
+    ports:
+      - "${IPERF3_PORTS:-5200-5212}:${IPERF3_PORTS:-5200-5212}"
+    ulimits:
+      nofile:
+        soft: 16556
+        hard: 65536
+    deploy:
+      resources:
+        limits:
+          cpus: "${IPERF3_CPU_LIMIT:-4.0}"
+          memory: "${IPERF3_MEM_LIMIT:-1G}"

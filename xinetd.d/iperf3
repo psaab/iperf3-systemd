@@ -1,0 +1,220 @@
+service iperf3-5200
+{
+    type            = UNLISTED
+    port            = 5200
+    socket_type     = stream
+    protocol        = tcp
+    wait            = yes
+    user            = root
+    server          = /usr/bin/iperf3
+    server_args     = --inetd --logfile /var/log/iperf3-5200.log
+    log_type        = SYSLOG daemon debug
+    log_on_success  = HOST PID EXIT DURATION
+    log_on_failure  = HOST ATTEMPT
+    disable         = no
+    rlimit_files    = 1024
+}
+
+service iperf3-5201
+{
+    type            = UNLISTED
+    port            = 5201
+    socket_type     = stream
+    protocol        = tcp
+    wait            = yes
+    user            = root
+    server          = /usr/bin/iperf3
+    server_args     = --inetd --logfile /var/log/iperf3-5201.log
+    log_type        = SYSLOG daemon debug
+    log_on_success  = HOST PID EXIT DURATION
+    log_on_failure  = HOST ATTEMPT
+    disable         = no
+    rlimit_files    = 1024
+}
+
+service iperf3-5202
+{
+    type            = UNLISTED
+    port            = 5202
+    socket_type     = stream
+    protocol        = tcp
+    wait            = yes
+    user            = root
+    server          = /usr/bin/iperf3
+    server_args     = --inetd --logfile /var/log/iperf3-5202.log
+    log_type        = SYSLOG daemon debug
+    log_on_success  = HOST PID EXIT DURATION
+    log_on_failure  = HOST ATTEMPT
+    disable         = no
+    rlimit_files    = 1024
+}
+
+service iperf3-5203
+{
+    type            = UNLISTED
+    port            = 5203
+    socket_type     = stream
+    protocol        = tcp
+    wait            = yes
+    user            = root
+    server          = /usr/bin/iperf3
+    server_args     = --inetd --logfile /var/log/iperf3-5203.log
+    log_type        = SYSLOG daemon debug
+    log_on_success  = HOST PID EXIT DURATION
+    log_on_failure  = HOST ATTEMPT
+    disable         = no
+    rlimit_files    = 1024
+}
+
+service iperf3-5204
+{
+    type            = UNLISTED
+    port            = 5204
+    socket_type     = stream
+    protocol        = tcp
+    wait            = yes
+    user            = root
+    server          = /usr/bin/iperf3
+    server_args     = --inetd --logfile /var/log/iperf3-5204.log
+    log_type        = SYSLOG daemon debug
+    log_on_success  = HOST PID EXIT DURATION
+    log_on_failure  = HOST ATTEMPT
+    disable         = no
+    rlimit_files    = 1024
+}
+
+service iperf3-5205
+{
+    type            = UNLISTED
+    port            = 5205
+    socket_type     = stream
+    protocol        = tcp
+    wait            = yes
+    user            = root
+    server          = /usr/bin/iperf3
+    server_args     = --inetd --logfile /var/log/iperf3-5205.log
+    log_type        = SYSLOG daemon debug
+    log_on_success  = HOST PID EXIT DURATION
+    log_on_failure  = HOST ATTEMPT
+    disable         = no
+    rlimit_files    = 1024
+}
+
+service iperf3-5206
+{
+    type            = UNLISTED
+    port            = 5206
+    socket_type     = stream
+    protocol        = tcp
+    wait            = yes
+    user            = root
+    server          = /usr/bin/iperf3
+    server_args     = --inetd --logfile /var/log/iperf3-5206.log
+    log_type        = SYSLOG daemon debug
+    log_on_success  = HOST PID EXIT DURATION
+    log_on_failure  = HOST ATTEMPT
+    disable         = no
+    rlimit_files    = 1024
+}
+
+service iperf3-5207
+{
+    type            = UNLISTED
+    port            = 5207
+    socket_type     = stream
+    protocol        = tcp
+    wait            = yes
+    user            = root
+    server          = /usr/bin/iperf3
+    server_args     = --inetd --logfile /var/log/iperf3-5207.log
+    log_type        = SYSLOG daemon debug
+    log_on_success  = HOST PID EXIT DURATION
+    log_on_failure  = HOST ATTEMPT
+    disable         = no
+    rlimit_files    = 1024
+}
+
+service iperf3-5208
+{
+    type            = UNLISTED
+    port            = 5208
+    socket_type     = stream
+    protocol        = tcp
+    wait            = yes
+    user            = root
+    server          = /usr/bin/iperf3
+    server_args     = --inetd --logfile /var/log/iperf3-5208.log
+    log_type        = SYSLOG daemon debug
+    log_on_success  = HOST PID EXIT DURATION
+    log_on_failure  = HOST ATTEMPT
+    disable         = no
+    rlimit_files    = 1024
+}
+
+service iperf3-5209
+{
+    type            = UNLISTED
+    port            = 5209
+    socket_type     = stream
+    protocol        = tcp
+    wait            = yes
+    user            = root
+    server          = /usr/bin/iperf3
+    server_args     = --inetd --logfile /var/log/iperf3-5209.log
+    log_type        = SYSLOG daemon debug
+    log_on_success  = HOST PID EXIT DURATION
+    log_on_failure  = HOST ATTEMPT
+    disable         = no
+    rlimit_files    = 1024
+}
+
+service iperf3-5210
+{
+    type            = UNLISTED
+    port            = 5210
+    socket_type     = stream
+    protocol        = tcp
+    wait            = yes
+    user            = root
+    server          = /usr/bin/iperf3
+    server_args     = --inetd --logfile /var/log/iperf3-5210.log
+    log_type        = SYSLOG daemon debug
+    log_on_success  = HOST PID EXIT DURATION
+    log_on_failure  = HOST ATTEMPT
+    disable         = no
+    rlimit_files    = 1024
+}
+
+service iperf3-5211
+{
+    type            = UNLISTED
+    port            = 5211
+    socket_type     = stream
+    protocol        = tcp
+    wait            = yes
+    user            = root
+    server          = /usr/bin/iperf3
+    server_args     = --inetd --logfile /var/log/iperf3-5211.log
+    log_type        = SYSLOG daemon debug
+    log_on_success  = HOST PID EXIT DURATION
+    log_on_failure  = HOST ATTEMPT
+    disable         = no
+    rlimit_files    = 1024
+}
+
+service iperf3-5212
+{
+    type            = UNLISTED
+    port            = 5212
+    socket_type     = stream
+    protocol        = tcp
+    wait            = yes
+    user            = root
+    server          = /usr/bin/iperf3
+    server_args     = --inetd --logfile /var/log/iperf3-5212.log
+    log_type        = SYSLOG daemon debug
+    log_on_success  = HOST PID EXIT DURATION
+    log_on_failure  = HOST ATTEMPT
+    disable         = no
+    rlimit_files    = 1024
+}
